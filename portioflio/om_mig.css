@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Main content styles */
+main {
+  padding: 2rem;
+  background-color: #f0eee864;
+}
+
+.om_tekst h1 {
+  margin-bottom: 1rem;
+  color: #212121;
+}
+.om_tekst p {
+  font-size: 1.2rem;
+  color: #212121;
+  font-family: "franklin-gothic-urw", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+/* ////////////Portifolio/////////// */
+
+@media (min-width: 768px) {
+  .om_grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: center;
+    margin-top: 7rem;
+    margin-left: 150px;
+  }
+  .om_tekst {
+    font-size: 2rem;
+    text-wrap: balance;
+  }
+
+  .om_mig_pic img {
+    max-width: 60%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  #portifolio {
+    padding: 30px;
+    margin-top: 5rem;
+  }
+  .undertitel {
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 2rem;
+  }
+  .undertitel2 {
+    font-size: 4rem;
+    text-align: left;
+    margin-top: 5rem;
+    padding-left: 150px;
+  }
+  .portifolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+  .portifolio-list div {
+    background: #d4d1cb79;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 7px;
+    color: #212121;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .portifolio-list i {
+    font-size: 40px;
+    margin-bottom: 30px;
+    color: #212121;
+  }
+  .portifolio-list p {
+    color: #212121;
+    margin-top: 1rem;
+    font-size: 18px;
+  }
+  .portifolio-list a {
+    color: #d9242a;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 1.4rem;
+    font-weight: 700;
+    transition: 0.4s;
+  }
+  .portifolio-list a:hover {
+    color: aliceblue;
+  }
+  /* //////////////cv////////////////////// */
+  .container_cv {
+    width: 100%;
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+  }
+  .container_cv {
+    width: 100%;
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+  }
+  .cv_theis {
+    width: 80%;
+    height: 975px;
+    border-radius: 5px;
+    text-align: center;
+  }
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  /* /////////////om mig///////////// */
+  .om_grid {
+    grid-template-columns: 1fr;
+  }
+  .om_mig_pic img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .om_tekst h1 {
+    text-align: center;
+    font-size: 5rem;
+    margin-top: 5rem;
+  }
+  .om_tekst p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    color: #000;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  /* /////////portifolio/////////// */
+  #portifolio {
+    padding: 30px;
+    margin-top: 5rem;
+  }
+  .undertitel {
+    text-align: center;
+    font-size: 5rem;
+  }
+  .portifolio-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+  }
+  .portifolio-list div {
+    background: #d4d1cb79;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-right: 10px;
+    border-radius: 7px;
+    color: #212121;
+    font-family: "franklin-gothic-urw", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  .portifolio-list i {
+    font-size: 30px;
+    margin-bottom: 16px;
+  }
+  .portifolio-list p {
+    color: #212121;
+    margin-top: 1rem;
+
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .portifolio-list a {
+    color: #d9242a;
+    margin-top: 1rem;
+    font-size: 16px;
+    line-height: 1.4rem;
+  }
+  .portifolio-list a:hover {
+    color: aliceblue;
+  }
+
+  /* ////////////////////cv///////////////////// */
+
+  .cv_theis {
+    width: 100%;
+    height: 525px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .undertitel2 {
+    margin-top: 5rem;
+    margin-bottom: 1rem;
+    font-size: 60px;
+    text-align: center;
+  }
+  .lottie {
+    width: 60px;
+  }
+}
